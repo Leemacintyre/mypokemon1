@@ -12,8 +12,6 @@
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 
-		// overflow: scroll;
-
 		a:link,
 		:visited,
 		:hover,
@@ -23,6 +21,8 @@
 			text-decoration: none;
 			color: inherit;
 			margin-left: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
 		}
 	}
 }
