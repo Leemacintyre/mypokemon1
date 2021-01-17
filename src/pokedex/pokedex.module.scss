@@ -1,0 +1,28 @@
+.container {
+	width: 100vw;
+	.pokemonList {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.buttonContainer {
+		width: 90vw;
+		margin: auto;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+
+		// overflow: scroll;
+
+		a:link,
+		:visited,
+		:hover,
+		:active {
+			display: flex;
+			font-weight: 900;
+			text-decoration: none;
+			color: inherit;
+			margin-left: 20px;
+		}
+	}
+}
