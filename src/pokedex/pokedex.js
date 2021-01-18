@@ -21,7 +21,6 @@ export const Pokedex = () => {
 		axios.get(api).then((res) => {
 			const { data } = res;
 			const { results } = data;
-			console.log(data);
 			const newPokemonData = {};
 			results.forEach((pokemon, i) => {
 				newPokemonData[i + 1] = {
@@ -34,8 +33,7 @@ export const Pokedex = () => {
 			});
 			setPokemonData(newPokemonData);
 		});
-	}, [api]);
-	console.log(pokemonData);
+	}, [api, pokemonNumber]);
 	const handleChange = (event) => {
 		setFilter(event.target.value);
 	};
@@ -114,7 +112,3 @@ export const Pokedex = () => {
 		</div>
 	);
 };
-
-// mapped through pokemonData with object.keys to get the pokemons ID
-//  then used that as a var to get pokemon data for every pokemon
-// tomorrow make a card to insert this info

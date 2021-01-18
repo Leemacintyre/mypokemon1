@@ -28,7 +28,6 @@ export const Pokemon = (props) => {
 	const clickedPokemon = () => {
 		const { id, name, height, types, sprites, weight, moves } = pokemon;
 		const { front_default, back_default, front_shiny, back_shiny } = sprites;
-
 		return (
 			<div className={styles.container}>
 				<Link className={styles.home} to='./'>
@@ -79,7 +78,7 @@ export const Pokemon = (props) => {
 
 	return (
 		<>
-			{pokemon === undefined && 'loading'}
+			{pokemon === undefined && 'LOADING...'}
 			{pokemon !== undefined && pokemon && clickedPokemon()}
 			{pokemon === false && 'pokemon not found'}
 		</>
